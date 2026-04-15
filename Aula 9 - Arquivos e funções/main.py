@@ -11,3 +11,5 @@ if calcular_maioridade(v_minha_idade):
 
 else:
     print('Não é maior de idade')
+
+    #teste de adição
