@@ -4,3 +4,10 @@ from funções import saudacoes, soma, calcular_maioridade
 
 #print(soma(40,60))
 
+v_minha_idade = int(input('Digite sua idade: '))
+
+if calcular_maioridade(v_minha_idade):
+    print('É Maior de idade')
+
+else:
+    print('Não é maior de idade')
