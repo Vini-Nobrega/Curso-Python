@@ -33,21 +33,40 @@ class carro:
     def __init__(self, carro, ano):
         self.carro = carro
         self.ano = ano
-        self.ligado = False
+        self.ligado = True
+        self.seta = None
 
     def modelo_carro(self):
         print(f'O modelo do seu carro é {self.carro}.')
         print(f'O ano do carro é {self.ano}.')
 
     def ligar(self):
-        if self.ligado == False:
+        if not self.ligado:
             self.ligado = True
             print('O carro foi ligado')
         else:
-            print('O carro já está ligado')
+            print('O carro já estava ligado')
+
+    def desligar(self):
+        if self.ligado:
+            self.ligado = False
+            print('O carro foi desligado')
+        else:
+            print('O carro estava desligado')
+
+    def ligar_seta(self, direcao):
+        if not self.ligado:
+            print('Você não pode dar seta porque o carro está desligado.')
+            return
+        
+        self.seta = direcao
+        print(f'Seta para {self.seta}')
+            
 
 
 carro_1 = carro('Azul', '2021')
 
-carro_1.modelo_carro()
+carro_1.modelo_carro
 carro_1.ligar()
+#carro_1.desligar()
+carro_1.ligar_seta('Esquerda')
