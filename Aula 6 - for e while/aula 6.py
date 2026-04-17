@@ -44,12 +44,26 @@
 # for v_range in range(0,11):
 #     v_soma = num * v_range
 #     print(f'{num}x{v_range}= {v_soma}')
-#
-num = int(input('Digite um número: '))
-num_subtrai = num
+# #
+# num = int(input('Digite um número: '))
+# num_subtrai = num
 
-for v_num in range(num,0,-1):
-    while num_subtrai != 2:
-        num_subtrai = num_subtrai - 1
-        v_num = v_num * num_subtrai
-        print(v_num)
+# for v_num in range(num,0,-1):
+#     while num_subtrai != 2:
+#         num_subtrai = num_subtrai - 1
+#         v_num = v_num * num_subtrai
+#         print(v_num)
+
+
+
+v_nome = ''
+v_idade = ''
+
+while v_nome != 'Vini' or v_idade != '20':
+
+    v_nome = input('Digite o nome: ')
+    v_idade = input('Digite a idade: ')
+
+    print('Algo está incorreto. Tente novamente')
+
+print('Acesso liberado!')
