@@ -54,16 +54,38 @@
 #         v_num = v_num * num_subtrai
 #         print(v_num)
 
+# v_nome = ''
+# v_idade = ''
 
+# while v_nome != 'Vini' or v_idade != '20':
 
-v_nome = ''
-v_idade = ''
+#     v_nome = input('Digite o nome: ')
+#     v_idade = input('Digite a idade: ')
 
-while v_nome != 'Vini' or v_idade != '20':
+#     print('Algo está incorreto. Tente novamente')
 
-    v_nome = input('Digite o nome: ')
-    v_idade = input('Digite a idade: ')
+# print('Acesso liberado!')
 
-    print('Algo está incorreto. Tente novamente')
+# v_lista = ['Arroz', 'Feijão']
 
-print('Acesso liberado!')
+# # v_lista.append('Batata')
+
+# print (v_lista)
+
+# for v_lista_ordenada in v_lista:
+#     print(v_lista_ordenada)
+
+# v_login = input('Digite o login: ')
+
+# if v_login != 'Vini':
+#     while v_login != 'Vini':
+
+#         v_login = input('Login incorreto, informe novamente: ')
+
+# v_senha = int(input('Agora, digite a senha: '))
+
+# while v_senha != 123:
+
+#     v_senha = int(input('Senha incorreta, insira novamente: '))
+
+# print('Acesso liberado!')

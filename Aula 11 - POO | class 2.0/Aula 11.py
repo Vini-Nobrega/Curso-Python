@@ -33,7 +33,7 @@ class carro:
     def __init__(self, carro, ano):
         self.carro = carro
         self.ano = ano
-        self.ligado = True
+        self.ligado = False
         self.seta = None
 
     def modelo_carro(self):
