@@ -1,0 +1,29 @@
+class Computador:
+    def __init__(self, modelo, gpu_nome, gpu_memoria, nome_cpu, cpu_cores, cpu_clock):
+        self.modelo = modelo
+        self.gpu = self.GPU(gpu_nome, gpu_memoria)
+        self.cpu = self.CPU(nome_cpu, cpu_cores, cpu_clock)
+
+    def config_do_pc(self):
+        print(f'Modelo do PC: {self.modelo}')
+        self.gpu.config_GPU()
+        self.cpu.config_CPU()
+
+    class GPU:
+        def __init__(self, nome, memoria):
+            self.nome = nome
+            self.memoria = memoria
+
+        def config_GPU(self):
+            print(f'{self.nome} - {self.memoria} GB')
+
+    class CPU:
+        def __init__(self, nome, cores, clock):
+            self.nome = nome
+            self.cores = cores
+            self.clock = clock
+        def config_CPU(self):
+            print(f'{self.nome} - {self.cores} cores - {self.clock} ghz')
+
+PC = Computador('Dell XP 2026', 'Nvidia 1660 Super', 22, 'Ryzen 5 4500', 20, 4.5)
+PC.config_do_pc()

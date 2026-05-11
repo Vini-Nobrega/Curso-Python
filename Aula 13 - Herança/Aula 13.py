@@ -23,14 +23,11 @@ class Cachorro(Animal):
     def acao(self):
         print(f'A cachorra {self.nome}, abanou o rabo')
 
-
 class Elefante(Animal):
     def emitir_som(self):
         print('**Barulhos de Elefante**')
-
     def acao(self):
         print(f'O elefante {self.nome} levantou as orelhas')
-
 
 gato_1 = Gato('Felix', 'Marrom', 'Siamese')
 gato_1.apresentar()
