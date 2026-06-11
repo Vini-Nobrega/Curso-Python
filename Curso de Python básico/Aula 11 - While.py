@@ -10,7 +10,7 @@ while True:
 
     try:
         v_disponivel = int(input('Digite seu saldo: R$: '))
-        break
+         
 
     except ValueError:
         print('Por favor, digite apenas números.')
